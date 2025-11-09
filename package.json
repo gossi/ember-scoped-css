@@ -9,7 +9,7 @@
     "build": "pnpm --filter '*' build",
     "lint": "pnpm --filter '*' lint",
     "lint:fix": "pnpm --filter '*' lint:fix",
-    "prepare": "pnpm build",
+    "prepare": "pnpm run --filter 'ember-scoped-css' build",
     "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
     "start:addon": "pnpm --filter v2-addon start --no-watch.clearScreen",
     "start:embroider-app": "pnpm --filter embroider-app start",
